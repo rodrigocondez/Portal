@@ -206,58 +206,11 @@ html{
 	.about--banner a svg{position:relative;left:5px;width:15px;fill:#fff;-webkit-transition:left .2s ease-in-out;transition:left .2s ease-in-out}
 	.about--banner a:hover svg{left:10px}
 	.about--banner img{position:absolute;bottom:-20px;right:-180px}
-	.about--banner input[type=text], input[type=password] {width: 100%;padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;}
-	.about--banner button {background-color: #fd307f; color: white; padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 100%;}
-	.about--banner button:hover {opacity: 0.8;}
-	.about--banner .cancelbtn {width: auto; padding: 10px 18px; background-color: #f44336;}
-	.about--banner .imgcontainer {text-align: center; margin: 24px 0 12px 0; position: relative;}
-	.about--banner img{position:absolute;bottom:-20px;right:-180px}
-	.about--banner img.avatar {width: 40%; border-radius: 50%;}
-	.about--banner .container { padding: 16px;}
-	.about--banner span.psw {float: right;padding-top: 16px;}
-	.about--banner .modal {
-		display: none; /* Hidden by default */
-	    position: fixed; /* Stay in place */
-	    z-index: 2; /* Sit on top */
-	    left: 0;
-	    top: 0;
-	    width: 100%; /* Full width */
-	    height: 100%; /* Full height */
-	    overflow: auto; /* Enable scroll if needed */
-	    background-color: rgb(0,0,0); /* Fallback color */
-	    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-	    padding-top: 60px;
-	}
-	.about--banner .modal-content {
-	    background-color: #fefefe;
-	    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-	    left:100px; border: 1px solid #888;
-	    width: 50%; /* Could be more or less, depending on screen size */
-	}
-
-
-	.about--banner .close {
-	    position: absolute;
-	    right: 25px;
-	    top: 0;
-	    color: #000;
-	    font-size: 35px;
-	    font-weight: bold;
-	}
-
-	.about--banner .close:hover,
-	.about--banner .close:focus {
-	    color: red;
-	    cursor: pointer;
-	}
-
-	/* Add Zoom Animation */
-	.about--banner .animate {
-	    -webkit-animation: animatezoom 0.6s;
-	    animation: animatezoom 0.6s
-	}
-
-
+	.about--banner button{position:relative;left:230px;padding:5px 17px 5px 12px;font-weight:7	00;text-transform:uppercase;background-color:transparent;border:none}
+	.about--banner button .btn-background{position:absolute;top:0;left:23px;right:0;height:100%;background-color:#fd307f;z-index:-1;-webkit-transition:left .2s ease-in-out;transition:left .2s ease-in-out}
+	.about--banner button:hover .btn-background{left:0}
+	.about--banner button:focus{outline:none}
+	.about--banner button svg{position:relative;left:5px;width:15px;fill:#fff}
 	.about--options{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;max-width:600px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin:0;padding:0;list-style:none}
 	.about--options>a{position:relative;width:150px;height:75px;text-decoration:none;color:#fff;border:10px solid #fd307f;background-position:center;background-size:cover;background-repeat:no-repeat}
 	.about--options>a:nth-child(1){background-image:url("../img/about-winners.jpg")}
