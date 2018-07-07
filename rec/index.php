@@ -15,7 +15,7 @@ IF($cek > 0)
 
  $_SESSION['email'] = $data['email'];
  $_SESSION['name'] = $data['full_name'];
- echo "<script language=\"javascript\">alert(\"mais um viado connectado! \");document.location.href='after.php';</script>";
+ echo "<script language=\"javascript\">alert(\"Login efetuado com sucesso! \");document.location.href='after.php';</script>";
 }else{
  echo "<script language=\"javascript\">alert(\"Usuario ou senha Invalido\");document.location.href='index.php';</script>";
 }
