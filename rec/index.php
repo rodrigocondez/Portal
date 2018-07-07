@@ -1,29 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-
-<?php
-include "db_con.php";
-session_start();
-IF(ISSET($_POST['login'])){
-$email = $_POST['email'];
-$password = $_POST['password'];
-$cek = mysqli_num_rows(mysql_query("SELECT * FROM user_login WHERE email='$email' AND password='$password'"));
-$data = mysqli_fetch_array(mysql_query("SELECT * FROM user_login WHERE email='$email' AND password='$password'"));
-IF($cek > 0)
-{
-
- $_SESSION['email'] = $data['email'];
- $_SESSION['name'] = $data['full_name'];
- echo "<script language=\"javascript\">alert(\"Login efetuado com sucesso! \");document.location.href='after.php';</script>";
-}else{
- echo "<script language=\"javascript\">alert(\"Usuario ou senha Invalido\");document.location.href='index.php';</script>";
-}
-}
-?>
-
-
-
 <head>
 	<title>Agendamento Recebimento</title>
 	<meta charset="UTF-8">
@@ -128,3 +104,23 @@ IF($cek > 0)
 
 </body>
 </html>
+
+<?php
+include "db_con.php";
+session_start();
+IF(ISSET($_POST['login'])){
+$email = $_POST['email'];
+$password = $_POST['password'];
+$cek = mysql_num_rows(mysql_query("SELECT * FROM user_login WHERE email='$email' AND password='$password'"));
+$data = mysql_fetch_array(mysql_query("SELECT * FROM user_login WHERE email='$email' AND password='$password'"));
+IF($cek > 0)
+{
+
+ $_SESSION['email'] = $data['email'];
+ $_SESSION['name'] = $data['full_name'];
+ echo "<script language=\"javascript\">alert(\"Login efetuado com sucesso! \");document.location.href='after.php';</script>";
+}else{
+ echo "<script language=\"javascript\">alert(\"Usuario ou senha Invalido\");document.location.href='index.php';</script>";
+}
+}
+?>
