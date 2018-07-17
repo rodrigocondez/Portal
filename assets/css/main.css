@@ -32,7 +32,7 @@
 
 html{
 	font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-	body{margin:0}
+	body{margin:0; max-width:100%;overflow: hidden;}
 	article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 	audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
 	audio:not([controls]){display:none;height:0}[hidden],
@@ -160,7 +160,7 @@ html{
 		.intro--options{display:none}}
 	.work{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:960px;max-width:80%;height:100%;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:0 auto}
 	@media (max-width: 1180px){
-		.work{max-width:100%}}
+		.work{max-width:100%; overflow: hidden;}}
 	.work h2{margin:0 0 20px 0;font-size:30px;text-align:center}
 	.work--lockup{position:relative}
 	.work--lockup .slider{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:80%;margin:0 auto;padding:0;list-style:none}
